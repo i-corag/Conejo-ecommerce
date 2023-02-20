@@ -1,6 +1,6 @@
 
 const getCart = (req,res) => {
-    return res.send ('CARRITO');
+    return res.render ('pages/cart.ejs');
 };
 
 module.exports = {getCart};

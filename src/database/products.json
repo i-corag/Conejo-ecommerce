@@ -1,0 +1,42 @@
+[
+    {
+        "id":1,
+        "title":"Feminismo Para Principiantes",
+        "author": "Nuria Varela",
+        "price" : 2800.8764,
+        "image": "/assets/libros/1.jpeg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sequi ipsum dicta perspiciatis ducimus, velit voluptas dignissimos perferendis error accusamus molestias autem dolorem saepe. Illum"
+    },
+    {
+        "id":2,
+        "title":"El Chico de las Estrellas",
+        "author": "Chris Pueyo",
+        "price" : 2800.8764,
+        "image": "/assets/libros/2.jpeg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sequi ipsum dicta perspiciatis ducimus, velit voluptas dignissimos perferendis error accusamus molestias autem dolorem saepe. Illum" 
+    },
+    {
+        "id":3,
+        "title":"Ecologismo Real",
+        "author": "J. M. Mulet",
+        "price" : 2800.8764,
+        "image":"/assets/libros/3.jpeg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sequi ipsum dicta perspiciatis ducimus, velit voluptas dignissimos perferendis error accusamus molestias autem dolorem saepe. Illum" 
+    },
+    {
+        "id":4,
+        "title":"Puta Madre",
+        "author": "Dalia F. Walker",
+        "price" : 2800.8764,
+        "image": "/assets/libros/4.jpeg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sequi ipsum dicta perspiciatis ducimus, velit voluptas dignissimos perferendis error accusamus molestias autem dolorem saepe. Illum" 
+    },
+    {
+        "id":5,
+        "title":"Los hombres me explican cosas",
+        "author": "Rebecca Solnit",
+        "price" : 2800.8764,
+        "image":"/assets/libros/5.jpeg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sequi ipsum dicta perspiciatis ducimus, velit voluptas dignissimos perferendis error accusamus molestias autem dolorem saepe. Illum"
+    }
+]

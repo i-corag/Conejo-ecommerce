@@ -1,10 +1,10 @@
 
 const getLogin = (req, res) => {
-    return res.send ('LOGIN');
+    return res.render ('pages/login.ejs');
 };
 
 const getRegister = (req, res) => {
-    return res.send ('REGISTER');
+    return res.render ('pages/register.ejs');
 };
 
 module.exports = {getLogin, getRegister};
