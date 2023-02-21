@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include('../partials/head.ejs') %>
+
+<head>
+    <%- include('../partials/head.ejs') %>
+    <link rel="stylesheet" href="/css/productDetail.css"/>
+</head>
+
 <body>
+
     <%- include('../partials/header.ejs') %>
+
     <main>
+        <img src= "<%= product.image %>" alt="image"/>  
+                
+        <section id="description">
+            <h2><%= product.title %></h2>
+            <h3><%= product.author %></h3>
+            <p><%= product.description %></p>
+        </section>
+    
+        <section id="price">
+            <div>
+                <form>
+                    <input type="checkbox" id="ebook" name="ebook" />
+                    <label for="ebook">EBOOK<br>$<%=product.ebookPrice.toFixed(2)%></label>
+                </form>
+                <form>
+                    <input type="checkbox" id="book" name="book" />
+                    <label for="book">BOOK<br>$<%=product.bookPrice.toFixed(2)%></label>
+                </form>
+            </div>
+            <button type="submit"> ADD <i class="fa-solid fa-cart-shopping"></i></button>
+        </section>
 
     </main>
+
     <%- include('../partials/footer.ejs') %>
+
 </body>
+
 </html>

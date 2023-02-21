@@ -1,0 +1,81 @@
+header {
+    width: 100%;
+    position: sticky;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em 1em;
+    background-color: var(--first-color);
+}
+.nav-search-desktop{
+    display: none;
+}
+header img {
+    height: 5em;
+    cursor: pointer;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    width: 50%;  
+}
+.nav-icon {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--second-color);
+    margin:.5em;
+   
+}
+.nav-icon:hover {
+    color: var(--third-color);
+    opacity: .8;
+    cursor: pointer;
+}
+.nav-icon svg{
+    width: 2em;
+    height: 2em;
+}
+
+
+/* TABLET */
+@media (min-width: 768px){
+    #search{
+        display: none;
+    }
+    .nav-search-desktop{
+        display: flex;
+        align-items: center;
+        height: 2.5em;
+        border: .1em solid var(--second-color) ;
+        border-radius: 3px;
+        margin-right: 1em;
+    }
+    .nav-search-desktop input{
+        height: 2.5em;
+        padding: .3em;
+        color: var(--third-color);
+        background-color: var(--first-color);
+        border: none;
+    }
+    .nav-search-desktop input::placeholder{
+        color: var(--third-color);
+    }
+    .nav-search-desktop svg{
+        padding: .3em; 
+        color: var(--third-color)
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 1200px) {
+    header {
+        padding: .5em 3em;
+    }
+    header img {
+        height: 7em;
+    }
+}

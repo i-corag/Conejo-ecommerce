@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include('../partials/head.ejs') %>
-<body>
-    <%- include('../partials/header.ejs') %>
-    <main>
-
-    </main>
-    <%- include('../partials/footer.ejs') %>
-</body>
+    <head>
+        <%- include('../partials/head.ejs') %>
+        <link rel="stylesheet" href="/css/login.css"/>
+    </head>
+    <body>
+        <%- include('../partials/header.ejs') %>
+        <main>
+    
+                <h1>INICIAR SESION</h1>
+                
+                <div>
+                    <form id="login" action="/login" method="post">
+                        <label for="email"></label>
+                        <input class="login"
+                        required
+                        id="email"
+                        type="email"
+                        name="email"
+                        placeholder="email"
+                        />
+                        <label for="password"></label>
+                        <input class="login"
+                        required
+                        id="password"
+                        type="password"
+                        name="password"
+                        placeholder="password"
+                        />
+                        <button id="ingresar" type="submit">INGRESAR</button>
+                    </form>
+                    <span id="loginEnlace">
+                        <a class="loginEnlace" href="/resetPassword">Olvide mi contraseña</a>
+                        <a class="loginEnlace" href="/auth/register">Registrarme</a>
+                    </span>
+            </div>
+        </main>
+        <%- include('../partials/footer.ejs') %>
+    </body>
 </html>

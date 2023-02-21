@@ -1,0 +1,85 @@
+main {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main img {
+    height: 13em;
+}
+#description h2 , h3 {
+    text-align: center;
+    padding: .5em;
+    color: var(--third-color);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+#description h3 {
+    font-weight: lighter;
+    padding: 0;
+}
+#description p {
+    padding: .5em;
+    text-align: center;
+    color: var(--fourth-color);
+    font-weight: lighter;
+    line-height: 1.2;
+}
+
+/* PRICES */
+#price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#price div {
+    margin:1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2.5em;
+}
+#price div form input {
+    appearance: none;
+}
+#price div form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#price div form label{
+    text-align: center;
+    padding: .6em;
+    border: .1em solid var(--third-color);
+    border-radius:10px; 
+    color: var(--third-color); 
+}
+#price div form input:checked + label { 
+    color: var(--second-color);
+    border: .1em solid var(--second-color);
+}
+#price button {
+    margin:1em;
+    padding: .4em;
+    width: 40%;
+    height: 2em;
+    border: .1em solid var(--second-color);
+    background-color: var(--second-color);
+    border-radius: 5px;
+    color: var(--first-color);
+    font-size: 1em;
+}
+
+
+/* DESKTOP */
+@media (min-width: 1200px) {
+    main {
+        margin: 4em 10em;
+        flex-direction: row;
+        justify-content: center;
+        gap: 3em;
+    }
+    main img {
+        height: 15em;
+    }
+}

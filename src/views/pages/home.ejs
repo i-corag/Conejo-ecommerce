@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include('../partials/head.ejs') %>
+
+<head>
+    <%- include('../partials/head.ejs') %>
+    <link rel="stylesheet" href="/css/home.css"/>
+</head>
+
 <body>
     <%- include('../partials/header.ejs') %>
     <main>
+        <a href="/auth/register">
+            <section id="banner">
+                <p id="text">Nuestros socios tienen beneficios. Registrate GRATIS y DISFRUTA!</p>
+                <span id="img"></span>
+            </section>
+        </a>
 
-        <section class="section" id="Productos">
-            <h1>Novedades</h1>
+        <section id="products">
+            <h1>Novedades del mes</h1>
             <ul>
                 <% products.forEach((product) => { %> 
-                <a a href="/productDetail/<%= product.id %>">
+                <a a href="/product/<%= product.id %>">
                 <li>
                     <img src= "<%= product.image %>" />
                     <h3> <%= product.title %> </h3>
@@ -22,4 +33,5 @@
     </main>
     <%- include('../partials/footer.ejs') %>
 </body>
+
 </html>

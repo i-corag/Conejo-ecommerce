@@ -8,6 +8,7 @@ const app = express();
 // Express configuration
 app.set ('views' , path.join(__dirname, './views')); //no se si va o no va
 app.set('view engine', 'ejs');
+app.use(express.static(path.join(__dirname, "../public"))); // Access public folder
 
 // Routes
 const homeRoutes = require('./routes/home.route');
